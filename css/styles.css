@@ -1,0 +1,120 @@
+/* #home{
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-style:
+}
+.main{
+  background-color: black;
+  opacity: 0.6;
+   padding:0;
+   margin: 0;
+   height: 450px;
+}
+#contacts{
+  display: none;
+}
+#tender{
+  background-image: url("../images/image.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+#services{
+  display: none;
+}
+#contacts{
+  display: none;
+}
+#about{
+  background-color: grey;
+  color:black;
+}
+h1{
+  color:red;
+  text-align:center;
+}
+h2{
+  text-decoration: underline;
+  color: yellowgreen;
+  text-shadow:green;
+  text-align: center;
+}
+.field-wrap{
+  padding-left: 200px;
+}
+.forgot{
+  color:black;
+}
+.topnav{
+  color:blue;
+  display: block;
+  background-color: white;
+  padding-left: 40px
+}
+.field-wrap{
+  color:black;
+}
+.forget{
+  text-align: center;
+  color: green;
+}
+#field{
+  width: 300px;
+  margin-left: 400px;
+}
+.title{
+  color: white;
+  margin-top: -20px;
+}
+#hunt{
+  color: black;
+  font-family: 'Oleo Script', cursive;
+   font-size: 65px;
+}
+span{
+  color: #1e90ff;
+}
+nav{
+float: right;
+}
+nav ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+nav li{
+display: inline-block;
+margin: 1em;
+}
+nav a{
+font-weight: 900;
+text-decoration: none;
+text-transform: uppercase;
+font-size: .8rem;
+padding: .5em;
+color: #FFF;
+}
+nav a:hover,
+nav a:focus{
+color: #DDD;
+}
+.button{
+display: inline-block;/*avoids merging*/
+font-size: 1.15rem;
+text-decoration:none;
+text-transform: uppercase;
+border-width: 2px;
+border-style: solid;
+padding: .5em 1.75em;
+margin-left: 500px;
+}
+.button-accent{
+color: #1e90ff;
+border-color: #1e90ff;
+}
+.button-accent:hover,
+.button-accent:focus{
+background:#D3D3D3;
+color: grey;
+} */

@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="start-menu container">
+    <div id="about">
+      <div class="jumbotron">
+        <h1>About us</h1>
+        <p>Tender hunt  is an online tenders publishing website majoring  in ensuring suppliers get to view all tenders before their due date is reached, and also customers get to ask for the goods and services they require in time.</p>
+        <p>Tender hunt  was started with 3 main aims;</p>
+        <ul>
+          <li>As a platform for anyone around the region to view daily tenders .</li>
+          <li>To help businesses receive information concerning tenders in due time.</li>
+          <li>A platform where businesses can view past advertised tenders as well as to get the tender documents.</li>
+        </ul>
+          <p>We post tenders from private businesses, publicly listed companies, Non Governmental Organizations (NGO), Institutions, Parastatals and the County Governments . We source tenders from every available media as well as receiving tenders directly from clients. we have also invested  in finding as many additional sources of information as possible, particularly relating to the smaller contracts which are generally much easier for a small or medium sized company to win.</p>
+          <br>
+          <br>
+          <br>
+          <input type="button"  value="service" id="service">
+      </div>
+    </div>
+      <div id="services">
+        <div class="jumbotron">
+          <h2>Services Offered</h2>
+          <p>This are some of the sevices we offer</p>
+          <ol>
+            <li>Connecting suppliers and cusomers</li>
+            <li>Give a platform for suppliers to advertise their products and services </li>
+            <li>Promotion of eligable product and service in the market</li>
+          </ol>
+              <h3>Acquring tenders</h3>
+              <p>Categories</p>
+              <ol>
+                  <li>Food Product</li>
+                  <p></p>
+                  <li>Transportation</li>
+                  <p></p>
+                  <li>Construction/Building materials</li>
+                  <p></p>
+                  <li>Labourers</li>
+                  <p></p>
+                  <li>information Technology Services</li>
+                  <p></p>
+                </ol>
+            <div class="products">
+              <h3>Posting for tenders</h3>
+              <div style="background-color:#0F0F8C ;height:45px">
+            <h2 style="color: white">available tender</h2>
+        </div>
+        <div>
+            <button id="myBtn">&emsp;+ Add Product &emsp;</button>
+        </div>
+        <div>
+            <table id="tasksTable">
+                <thead>
+                    <tr style="background-color:rgba(201, 196, 196, 0.86)">
+                        <th style="width: 150px;">Name</th>
+                        <th style="width: 250px;">Desc</th>
+                        <th style="width: 120px">Date</th>
+                        <th style="width: 120px class=fa fa-trash"></th>
+                    </tr>
+
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+            <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3> Add Task</h3>
+                </div>
+                <div class="modal-body">
+                    <table style="padding: 28px 50px">
+                        <tr>
+                            <td style="width:150px">Name:</td>
+                            <td><input type="text" name="name" id="taskname" style="width: -webkit-fill-available"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Description of product:
+                            </td>
+                            <td>
+                                <textarea name="desc" id="taskdesc" cols="60" rows="10"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" value="submit" style="float: right;" onclick="addTasks()">SUBMIT</button>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+        </div>
+      <script>
+      var tasks = [];
+      var descs = [];
+
+
+      var modal = document.getElementById('myModal');
+
+      var btn = document.getElementById("myBtn");
+
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+          modal.style.display = "block";
+      }
+
+      span.onclick = function () {
+          modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      var rowCount = 1;
+      function addTasks() {
+          var temp = 'style .fa fa-trash';
+          tasks.push(document.getElementById("taskname").value);
+          descs.push(document.getElementById("taskdesc").value);
+          var table = document.getElementById("tasksTable");
+          var row = table.insertRow(rowCount);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          cell1.innerHTML = tasks[rowCount - 1];
+          cell2.innerHTML = descs[rowCount - 1];
+          cell3.innerHTML = getDate();
+          cell4.innerHTML='<td class="fa fa-trash"></td>';
+          rowCount++;
+          modal.style.display = "none";
+      }
+
+
+      function getDate() {
+          var today = new Date();
+          var dd = today.getDate();
+          var mm = today.getMonth() + 1; //January is 0!
+
+          var yyyy = today.getFullYear();
+
+          if (dd < 10) {
+              dd = '0' + dd;
+          }
+          if (mm < 10) {
+              mm = '0' + mm;
+          }
+          var today = dd + '-' + mm + '-' + yyyy.toString().slice(2);
+          return today;
+      }
+
+      </script>
+      <input type="button"  value="contacts" id="contact">
+        </div>
+
+      </div>
+        <div id="contacts">
+          <div class="jumbotron">
+        <h2>contacts</h2>
+          <p>
+            <ul>
+              <li>Phone : 0746432419</li><br>
+              <li>Email :<a href="email"> tenderkenya@gmail.com</a></li><br>
+              <li>Facebook : tenderhuntkenya</li><br>
+              <li>Instegram : @tenderhunt</li><br>
+              <li>Tweeter : @tenderhunt</li><br>
+            </ul>
+          </p>
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+  </body>
+</html> -->
