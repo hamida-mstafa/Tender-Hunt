@@ -1,4 +1,4 @@
-/*#home{
+/* #home{
   background-image: url("");
   background-repeat: no-repeat;
   background-size: contain;
@@ -31,7 +31,7 @@ h3{
 #contacts{
   display: none; */
 }
-/*h1{
+h1{
   color:red;
   text-align:center;
 }
@@ -100,7 +100,7 @@ color: #9408A7;
 }
 .button{
 display: inline-block;/*avoids merging*/
-/*font-size: 1.15rem;
+font-size: 1.15rem;
 text-decoration:none;
 text-transform: uppercase;
 border-width: 2px;
@@ -145,4 +145,4 @@ color: grey;
   font-style: normal;
   font-family: serif;
   font-weight: bold;
-}
+} */
