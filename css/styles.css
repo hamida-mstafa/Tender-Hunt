@@ -1,8 +1,12 @@
-/* #home{
+/*#home{
   background-image: url("");
   background-repeat: no-repeat;
   background-size: contain;
   font-style:
+}
+h3{
+  text-align: center;
+  color:#0F55EA;
 }
 .main{
   background-color: black;
@@ -10,6 +14,7 @@
    padding:0;
    margin: 0;
    height: 450px;
+   border-radius:25px;
 }
 #contacts{
   display: none;
@@ -20,25 +25,19 @@
   height: 100vh;
 }
 
-#services{
+/* #services{
   display: none;
 }
 #contacts{
-  display: none;
+  display: none; */
 }
-#about{
-  background-color: grey;
-  color:black;
-}
-h1{
+/*h1{
   color:red;
   text-align:center;
 }
 h2{
-  text-decoration: underline;
   color: yellowgreen;
   text-shadow:green;
-  text-align: center;
 }
 .field-wrap{
   padding-left: 200px;
@@ -59,7 +58,7 @@ h2{
   text-align: center;
   color: green;
 }
-#field{
+#field, #field1{
   width: 300px;
   margin-left: 400px;
 }
@@ -93,15 +92,15 @@ text-decoration: none;
 text-transform: uppercase;
 font-size: .8rem;
 padding: .5em;
-color: #FFF;
+color: #070E9B;
 }
 nav a:hover,
 nav a:focus{
-color: #DDD;
+color: #9408A7;
 }
 .button{
 display: inline-block;/*avoids merging*/
-font-size: 1.15rem;
+/*font-size: 1.15rem;
 text-decoration:none;
 text-transform: uppercase;
 border-width: 2px;
@@ -117,4 +116,33 @@ border-color: #1e90ff;
 .button-accent:focus{
 background:#D3D3D3;
 color: grey;
-} */
+}
+.mids{
+  background-image: url("../images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hams{
+  background-image: url("https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  font-family: sans-serif;
+}
+.service{
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/10/16/36/mark-804938_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+
+}
+.jumbotron{
+  background: none;
+}
+.contact{
+  text-align: center;
+  color:white;
+  font-style: normal;
+  font-family: serif;
+  font-weight: bold;
+}
